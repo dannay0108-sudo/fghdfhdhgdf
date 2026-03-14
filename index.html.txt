@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>План тренировки на 4 часа</title>
+
+<style>
+/* === Стили прямо здесь === */
+body {
+    font-family: Arial, sans-serif;
+    background: #111;
+    color: white;
+    margin: 0;
+}
+header {
+    text-align: center;
+    padding: 30px;
+    background: #1f1f1f;
+}
+h1 {
+    color: #00ff88;
+}
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+.block {
+    background: #1c1c1c;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+h2 {
+    color: #00ff88;
+}
+ul {
+    line-height: 1.8;
+}
+img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #1f1f1f;
+    color: gray;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+    <h1>💪 План тренировки на 4 часа</h1>
+    <p>Полная программа тренировки</p>
+</header>
+
+<div class="container">
+
+<div class="block" id="running">
+<h2>1. Разминка + Бег — 30 мин</h2>
+<ul>
+<li>5 мин — суставная разминка</li>
+<li>5 мин — лёгкая растяжка</li>
+<li>20 мин — бег трусцой</li>
+</ul>
+</div>
+
+<div class="block" id="chest">
+<h2>2. Грудь — 25 мин</h2>
+<ul>
+<li>Жим штанги лёжа — 4×8–10</li>
+<li>Кроссовер — 4×12–15</li>
+</ul>
+</div>
+
+<div class="block" id="back">
+<h2>3. Спина — 25 мин</h2>
+<ul>
+<li>Тяга верхнего блока — 4×10–12</li>
+<li>Горизонтальная тяга — 4×10–12</li>
+<li>Гиперэкстензия — 3×15–20</li>
+</ul>
+</div>
+
+<div class="block" id="arms">
+<h2>4–5. Руки — 30 мин</h2>
+<ul>
+<li>Трицепс: Разгибание на блоке — 4×12–15</li>
+<li>Бицепс: Подъём штанги EZ — 4×10–12</li>
+</ul>
+</div>
+
+<div class="block" id="shoulders">
+<h2>6. Плечи — 20 мин</h2>
+<ul>
+<li>Жим гантелей сидя — 4×10–12</li>
+<li>Махи в стороны — 2×15</li>
+</ul>
+</div>
+
+<div class="block" id="legs">
+<h2>7. Ноги — 25 мин</h2>
+<ul>
+<li>Жим ногами — 4×10–12</li>
+<li>Разгибание ног — 3×12–15</li>
+<li>Сгибание ног — 3×12–15</li>
+</ul>
+</div>
+
+<div class="block" id="abs">
+<h2>8. Пресс — 12 мин</h2>
+<ul>
+<li>Скручивания — 4×20</li>
+<li>Боковой пресс — 3×20</li>
+</ul>
+</div>
+
+<div class="block" id="stretch">
+<h2>9. Растяжка — 13 мин</h2>
+<ul>
+<li>Статическая растяжка</li>
+<li>Дыхательные упражнения</li>
+<li>Лёгкий стретч всего тела</li>
+</ul>
+</div>
+
+</div>
+
+<footer>
+Тренировочный план 💪
+</footer>
+
+<script>
+/* === Скрипт прямо здесь === */
+// Подсветка блока при клике
+const blocks = document.querySelectorAll('.block');
+blocks.forEach(block => {
+    block.addEventListener('click', () => {
+        blocks.forEach(b => b.style.background = '#1c1c1c');
+        block.style.background = '#333333';
+    });
+});
+</script>
+
+</body>
+</html>
